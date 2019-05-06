@@ -1,3 +1,30 @@
+Dynamic DNS upgraded to version 3.9.0 and dnsmadeeasy compatibility added.
+ 
+Tested on 1.10.8 but should work for all versions
+ 
+Github: https://github.com/headhunter911/ddclient
+ 
+Simple update procedure: (either make script or copy and paste commands) (run as sudo)
+#!/bin/bash
+# DDCLIENT EdgeOS Simple Update Script
+# 
+cp /usr/sbin/ddclient /usr/sbin/ddclient.old
+rm -f /usr/sbin/ddclient
+curl -o /usr/sbin/ddclient https://raw.githubusercontent.com/headhunter911/ddclient/master/ddclient
+chmod +x /usr/sbin/ddclient
+Example of dnsmadeeasy config:
+        dynamic {
+            interface ethX {
+                service custom-dnsmadeeasy {
+                    host-name [Dynamic DNS ID]
+                    login [EMAIL]
+                    password [password]
+                    protocol dnsmadeeasy
+                }
+            }
+        }
+Good luck guys
+
 ===============================================================================
 # DDCLIENT v3.9.0
 
