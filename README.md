@@ -4,7 +4,7 @@ Tested on 1.10.8 but should work for all versions
  
 Github: https://github.com/headhunter911/ddclient
  
-Simple update procedure: (either make script or copy and paste commands) (run as sudo)
+	Simple update procedure: (either make script or copy and paste commands) (run as sudo)
 	#!/bin/bash
 	# DDCLIENT EdgeOS Simple Update Script
 	# 
@@ -13,8 +13,9 @@ Simple update procedure: (either make script or copy and paste commands) (run as
 	curl -o /usr/sbin/ddclient https://raw.githubusercontent.com/headhunter911/ddclient/master/ddclient
 	chmod +x /usr/sbin/ddclient
 
-	Example of dnsmadeeasy config:
-        dynamic {
+Example of dnsmadeeasy config:
+        
+	dynamic {
             interface ethX {
                 service custom-dnsmadeeasy {
                     host-name [Dynamic DNS ID]
