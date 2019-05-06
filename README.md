@@ -1,4 +1,4 @@
-Dynamic DNS upgraded to version 3.9.0 and dnsmadeeasy compatibility added.
+Dynamic DNS upgraded to version 3.9.0 and dnsmadeeasy compatibility added for edgerouter's
  
 Tested on 1.10.8 but should work for all versions
  
